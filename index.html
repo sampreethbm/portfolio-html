@@ -1,114 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI & ML Portfolio | BM SAMPREETH</title>
+
+    <title>BM Sampreeth | AI & ML Portfolio</title>
+
+    <meta name="description"
+        content="BM Sampreeth - AI & ML Engineer | Machine Learning, NLP, XAI, Data Science Portfolio">
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <header>
-        <h1>BM SAMPREETH</h1>
-        <p><strong>AI/ML Student & Software Developer</strong></p>
-        <p><em><p>
-    Aspiring AI Engineer specializing in Machine Learning, NLP, and Explainable AI.
-    Seeking internship and entry-level roles in data science and software development.
-</p>
-</em></p>
-        
-        <img src="profile.jpg" alt="Headshot of BM SAMPREETH" width="150" height="150">
-        
-        <br><br>
-        
-        <nav>
-            <a href="#about">About</a> | 
-            <a href="#projects">Projects</a> | 
-            <a href="#skills">Skills</a> | 
-            <a href="#contact">Contact</a>
-        </nav>
-        
-        <hr>
+    <!-- HERO SECTION -->
+    <header class="hero">
+
+        <img src="profile.jpg" alt="BM Sampreeth">
+
+        <h1>BM Sampreeth</h1>
+
+        <p class="tagline">
+            AI & ML Engineer | NLP | XAI | Data Science
+        </p>
+
+        <p class="summary">
+            Aspiring AI professional passionate about building explainable, scalable,
+            and impactful intelligent systems.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects">View Projects</a>
+
+            <a href="resume.pdf" download>Download Resume</a>
+
+        </div>
+
     </header>
 
+
+    <!-- MAIN CONTENT -->
     <main>
-        <section id="about">
+
+        <!-- ABOUT -->
+        <section id="about" class="card">
+
             <h2>About Me</h2>
+
             <p>
-                I am a Computer Science student specializing in Artificial Intelligence and Machine Learning. 
-                My focus is on developing transparent AI models (XAI) and solving real-world problems through 
-                Deep Learning and Computer Vision. I am currently seeking internship opportunities to apply 
-                my skills in software development and data science.
+                I am an Artificial Intelligence and Machine Learning student at
+                RNS Institute of Technology. My interests include deep learning,
+                natural language processing, and explainable AI.
             </p>
+
+            <p>
+                I am actively seeking internships and entry-level opportunities
+                in AI, data science, and software engineering.
+            </p>
+
         </section>
 
+
+        <!-- PROJECTS -->
         <section id="projects">
-            <h2>Key Projects</h2>
 
-            <article>
-                <h3>ToxicDerma-XAI</h3>
-                <p>
-                    <strong>Focus:</strong> Medical Imaging, Transfer Learning, Explainable AI (XAI)<br>
-                    Developed a system to detect arsenic-induced skin lesions using deep transfer learning. 
-                    Integrated XAI techniques to interpret model predictions, ensuring transparency in medical diagnostics.
-                </p>
-            </article>
+            <h2>Projects</h2>
 
-            <article>
-                <h3>AI Chatbot for Query Handling</h3>
-                <p>
-                    <strong>Focus:</strong> NLP, Python<br>
-                    Built an intelligent chatbot capable of understanding and processing user queries efficiently 
-                    using Natural Language Processing techniques.
-                </p>
-            </article>
+            <div class="projects-grid">
 
-            <article>
-                <h3>Fake News Detection</h3>
-                <p>
-                    <strong>Focus:</strong> Logistic Regression, Text Classification<br>
-                    Designed a machine learning model to classify news articles as real or fake. 
-                    Utilized NLP for text preprocessing and Logistic Regression for high-accuracy classification.
-                </p>
-            </article>
 
-            <article>
-                <h3>5-Player Ludo Game</h3>
-                <p>
-                    <strong>Focus:</strong> Game Logic, UI/UX Design<br>
-                    Designed the logic and user interface for a unique 5-player digital board game, 
-                    focusing on complex state management and user experience.
-                </p>
-            </article>
+                <div class="project-card">
+
+                    <h3>ToxicDerma-XAI</h3>
+
+                    <p>
+                        CNN-based system for arsenic lesion detection using
+                        transfer learning and Grad-CAM.
+                    </p>
+
+                    <span>Python • TensorFlow • XAI</span>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>AI Chatbot</h3>
+
+                    <p>
+                        NLP-based chatbot for automated query handling.
+                    </p>
+
+                    <span>Python • NLP • ML</span>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>Fake News Detection</h3>
+
+                    <p>
+                        Machine learning system to classify fake news articles.
+                    </p>
+
+                    <span>Scikit-learn • NLP • ML</span>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>5-Player Ludo</h3>
+
+                    <p>
+                        Digital board game with custom logic and UI.
+                    </p>
+
+                    <span>Java • Game Logic</span>
+
+                </div>
+
+
+            </div>
+
         </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Core Domains:</strong> Machine Learning, Deep Learning, Computer Vision, NLP</li>
-                <li><strong>Languages:</strong> Python, Java, SQL, LaTeX</li>
-                <li><strong>Tools & Frameworks:</strong> GitHub, VS Code, Jupyter Notebooks</li>
-                <li><strong>Soft Skills:</strong> Analytical Reasoning, Technical Writing, Problem Solving</li>
-            </ul>
+
+        <!-- SKILLS -->
+        <section id="skills" class="card">
+
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+
+                <div>Machine Learning</div>
+                <div>Deep Learning</div>
+                <div>NLP</div>
+                <div>Computer Vision</div>
+                <div>Python</div>
+                <div>Java</div>
+                <div>SQL</div>
+                <div>TensorFlow</div>
+                <div>GitHub</div>
+                <div>Linux</div>
+
+            </div>
+
         </section>
 
-        <section id="contact">
+
+        <!-- CONTACT -->
+        <section id="contact" class="card">
+
             <h2>Contact</h2>
-            <p>Ready to collaborate on innovative AI solutions.</p>
-            <address>
-                <strong>Email:</strong> <a href="mailto:sampreethbm08@gmail.com">sampreethbm08@gmail.com</a><br>
-                <strong>LinkedIn:</strong> <a href="#" target="_blank">www.linkedin.com/in/bmsampreeth</a><br>
-                <strong>GitHub:</strong> <a href="#" target="_blank">https://github.com/sampreethbm</a>
-            </address>
+
+            <p>Email: <a href="mailto:sampreethbm08@gmail.com">sampreethbm08@gmail.com</a></p>
+
+            <p>GitHub:
+                <a href="https://github.com/sampreethbm" target="_blank">
+                    github.com/sampreethbm
+                </a>
+            </p>
+
+            <p>LinkedIn:
+                <a href="https://www.linkedin.com" target="_blank">
+                    linkedin.com/in/sampreeth
+                </a>
+            </p>
+
         </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
-        <hr>
-        <p><small>&copy; 2026 BM SAMPREETH . Built with semantic HTML.</small></p>
+
+        <p>© 2026 BM Sampreeth | Built for Placements</p>
+
     </footer>
 
+
 </body>
+
 </html>
-
-
