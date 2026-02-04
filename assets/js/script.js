@@ -93,29 +93,29 @@ for (let i = 0; i < 40; i++) {
 }
 /* SCROLL ANIMATION */
 
-const sections = document.querySelectorAll("section");
+const allSections = document.querySelectorAll("section");
 
-const observer = new IntersectionObserver(
-    entries => {
+const revealSection = new IntersectionObserver(
+    function (entries, observer) {
 
         entries.forEach(entry => {
 
             if (entry.isIntersecting) {
+
                 entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+
             }
 
         });
 
     },
     {
-        threshold: 0.2
+        threshold: 0.15
     }
 );
 
-sections.forEach(section => {
-
-    section.classList.add("hidden");
-    observer.observe(section);
-
+allSections.forEach(section => {
+    revealSection.observe(section);
 });
 
