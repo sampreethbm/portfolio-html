@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BM Sampreeth | AI & ML Portfolio</title>
+    <title>BM Sampreeth | Web & AI Portfolio</title>
 
     <meta name="description"
-        content="BM Sampreeth - AI & ML Engineer | Machine Learning, NLP, XAI Portfolio">
+        content="BM Sampreeth - Web Developer & AI/ML Student. Skilled in HTML, CSS, JavaScript, and Machine Learning. Open to internships.">
+
+    <meta name="keywords"
+        content="Web Developer Intern, AI ML Student, Portfolio, HTML CSS JavaScript, BM Sampreeth">
+
+    <meta name="author" content="BM Sampreeth">
 
     <link rel="stylesheet" href="style.css">
 
@@ -17,34 +22,26 @@
 
 <body>
 
+    <!-- THEME BUTTON -->
     <button id="themeToggle" class="theme-toggle">
-    🌙 Dark Mode
-</button>
+        🌙 Dark Mode
+    </button>
 
-    <!-- HEADER -->
+
+    <!-- HERO -->
     <header class="hero">
 
-        <div class="hero-content">
+        <img src="profile.jpg" alt="BM Sampreeth">
 
-            <img src="profile.jpg" alt="BM Sampreeth">
+        <h1>BM Sampreeth</h1>
 
-            <h1>BM Sampreeth</h1>
+        <p class="role">
+            Web Development Intern | Frontend Developer | AI & ML Student
+        </p>
 
-            <p class="role">AI & ML Engineer • Data Scientist • Developer</p>
-
-            <p class="intro">
-                Building intelligent, explainable, and scalable systems using modern AI technologies.
-            </p>
-
-            <div class="hero-links">
-
-                <a href="#projects" class="btn-primary">View Projects</a>
-
-                <a href="resume.pdf" class="btn-outline">Download Resume</a>
-
-            </div>
-
-        </div>
+        <p class="intro">
+            Passionate about building responsive, interactive, and user-friendly websites.
+        </p>
 
     </header>
 
@@ -52,18 +49,27 @@
     <!-- MAIN -->
     <main>
 
+        <!-- OBJECTIVE -->
+        <section class="card">
+
+            <h2>Career Objective</h2>
+
+            <p>
+                Motivated engineering student seeking a Web Development Internship
+                to apply frontend skills and gain real-world experience.
+            </p>
+
+        </section>
+
+
         <!-- ABOUT -->
-        <section id="about" class="glass-card">
+        <section class="card">
 
             <h2>About Me</h2>
 
             <p>
-                I am an Artificial Intelligence and Machine Learning student at RNS Institute of Technology,
-                passionate about deep learning, NLP, and explainable AI.
-            </p>
-
-            <p>
-                I am seeking internship and entry-level opportunities in AI and software development.
+                I am an AI & ML student at RNS Institute of Technology with strong
+                interest in web development, UI design, and intelligent systems.
             </p>
 
         </section>
@@ -72,59 +78,71 @@
         <!-- PROJECTS -->
         <section id="projects">
 
-            <h2>Featured Projects</h2>
-
-            <div class="projects-container">
+            <h2>Projects</h2>
 
 
-                <article class="project">
+            <!-- FILTER -->
+            <div class="filter-buttons">
+
+                <button data-filter="all">All</button>
+                <button data-filter="web">Web</button>
+                <button data-filter="ai">AI</button>
+
+            </div>
+
+
+            <!-- GRID -->
+            <div class="projects-grid">
+
+
+                <article data-type="web">
+
+                    <h3>Portfolio Website</h3>
+
+                    <p>Responsive portfolio using HTML, CSS, and JavaScript.</p>
+
+                    <a href="https://sampreethbm.github.io/portfolio-html/" target="_blank">
+                        Live Demo →
+                    </a>
+
+                </article>
+
+
+                <article data-type="ai">
 
                     <h3>ToxicDerma-XAI</h3>
 
-                    <p>
-                        CNN-based lesion detection system using transfer learning and Grad-CAM.
-                    </p>
+                    <p>Lesion detection system with explainable AI.</p>
 
-                    <span>Python • TensorFlow • XAI</span>
+                    <a href="https://github.com/sampreethbm" target="_blank">
+                        View Code →
+                    </a>
 
                 </article>
 
 
-                <article class="project">
+                <article data-type="ai">
 
                     <h3>AI Chatbot</h3>
 
-                    <p>
-                        NLP chatbot for automated query handling and customer support.
-                    </p>
+                    <p>NLP-based intelligent chatbot.</p>
 
-                    <span>Python • NLP • ML</span>
+                    <a href="https://github.com/sampreethbm" target="_blank">
+                        View Code →
+                    </a>
 
                 </article>
 
 
-                <article class="project">
+                <article data-type="ai">
 
                     <h3>Fake News Detection</h3>
 
-                    <p>
-                        Machine learning system to classify fake news articles accurately.
-                    </p>
+                    <p>Machine learning model for news classification.</p>
 
-                    <span>Scikit-learn • NLP</span>
-
-                </article>
-
-
-                <article class="project">
-
-                    <h3>5-Player Ludo</h3>
-
-                    <p>
-                        Multiplayer digital board game with custom logic and UI.
-                    </p>
-
-                    <span>Java • Game Logic</span>
+                    <a href="https://github.com/sampreethbm" target="_blank">
+                        View Code →
+                    </a>
 
                 </article>
 
@@ -135,22 +153,20 @@
 
 
         <!-- SKILLS -->
-        <section id="skills" class="glass-card">
+        <section class="card">
 
             <h2>Skills</h2>
 
-            <div class="skills-container">
+            <div class="skills-grid">
 
-                <div>Machine Learning</div>
-                <div>Deep Learning</div>
-                <div>NLP</div>
-                <div>Computer Vision</div>
-                <div>Python</div>
-                <div>Java</div>
-                <div>SQL</div>
-                <div>TensorFlow</div>
-                <div>Git</div>
-                <div>Linux</div>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+                <span>Flexbox</span>
+                <span>CSS Grid</span>
+                <span>Python</span>
+                <span>GitHub</span>
 
             </div>
 
@@ -158,23 +174,23 @@
 
 
         <!-- CONTACT -->
-        <section id="contact" class="glass-card">
+        <section id="contact" class="card">
 
-            <h2>Contact</h2>
+            <h2>Contact Me</h2>
 
-            <p>Email: <a href="mailto:sampreethbm08@gmail.com">sampreethbm08@gmail.com</a></p>
+            <form id="contactForm">
 
-            <p>GitHub:
-                <a href="https://github.com/sampreethbm" target="_blank">
-                    github.com/sampreethbm
-                </a>
-            </p>
+                <input type="text" id="name" placeholder="Your Name">
 
-            <p>LinkedIn:
-                <a href="https://www.linkedin.com" target="_blank">
-                    linkedin.com/in/sampreeth
-                </a>
-            </p>
+                <input type="email" id="email" placeholder="Your Email">
+
+                <textarea id="message" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+                <p id="formMsg"></p>
+
+            </form>
 
         </section>
 
@@ -184,13 +200,14 @@
     <!-- FOOTER -->
     <footer>
 
-        <p>© 2026 BM Sampreeth </p>
+        <p>© 2026 BM Sampreeth | Portfolio Website</p>
 
     </footer>
-    
+
+
+    <!-- SCRIPT -->
     <script src="script.js"></script>
 
 </body>
 
 </html>
-
