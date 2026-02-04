@@ -282,15 +282,15 @@ footer {
     .hero h1 {
         font-size: 2.2rem;
     }
-    /* SCROLL POP-UP ANIMATION */
+ /* SCROLL ANIMATION */
 
-.hidden {
+section {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(50px);
     transition: all 0.8s ease;
 }
 
-.show {
+section.show {
     opacity: 1;
     transform: translateY(0);
 }
