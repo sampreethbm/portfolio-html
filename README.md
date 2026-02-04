@@ -18,16 +18,25 @@ This is my personal portfolio website developed using HTML, CSS, and JavaScript.
 - GitHub Pages
 
 ## Folder Structure
-
+'''
 portfolio-html/
-├── index.html
-├── README.md
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-└── resume/
-
+│
+├── index.html # Main webpage
+├── README.md # Project documentation
+│
+├── assets/ # Static resources
+│ ├── css/ # Stylesheets
+│ │ └── style.css
+│ │
+│ ├── js/ # JavaScript files
+│ │ └── script.js
+│ │
+│ └── images/ # Image assets
+│ └── profile.jpg
+│
+└── resume/ # Resume documents
+└── resume.pdf
+'''
 ## Live Demo
 
 https://sampreethbm.github.io/portfolio-html/
