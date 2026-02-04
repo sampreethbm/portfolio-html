@@ -90,3 +90,31 @@ for (let i = 0; i < 40; i++) {
 
     bg.appendChild(dot);
 }
+/* SCROLL ANIMATION */
+
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.2
+    }
+);
+
+sections.forEach(section => {
+
+    section.classList.add("hidden");
+    observer.observe(section);
+
+});
+
