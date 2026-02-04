@@ -1,34 +1,41 @@
-/* DARK MODE */
 console.log("JS Loaded");
 
-const toggle = document.getElementById("themeToggle");
+
+/* =====================
+   DARK MODE
+===================== */
+
+const toggleBtn = document.getElementById("themeToggle");
 const body = document.body;
 
 if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark-mode");
-    toggle.textContent = "☀️ Light Mode";
+    toggleBtn.textContent = "☀️ Light Mode";
 }
 
-toggle.addEventListener("click", () => {
+toggleBtn.addEventListener("click", () => {
 
     body.classList.toggle("dark-mode");
 
     if (body.classList.contains("dark-mode")) {
-        toggle.textContent = "☀️ Light Mode";
+        toggleBtn.textContent = "☀️ Light Mode";
         localStorage.setItem("theme", "dark");
     } else {
-        toggle.textContent = "🌙 Dark Mode";
+        toggleBtn.textContent = "🌙 Dark Mode";
         localStorage.setItem("theme", "light");
     }
+
 });
 
 
-/* FORM VALIDATION */
+/* =====================
+   FORM VALIDATION
+===================== */
 
 const form = document.getElementById("contactForm");
 const msg = document.getElementById("formMsg");
 
-form.addEventListener("submit", e => {
+form.addEventListener("submit", function (e) {
 
     e.preventDefault();
 
@@ -36,31 +43,34 @@ form.addEventListener("submit", e => {
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    if (!name || !email || !message) {
+    if (name === "" || email === "" || message === "") {
 
-        msg.textContent = "❌ Please fill all fields";
+        msg.textContent = "❌ All fields are required!";
         msg.style.color = "red";
 
     } else {
 
-        msg.textContent = "✅ Message sent successfully";
+        msg.textContent = "✅ Message sent successfully!";
         msg.style.color = "green";
 
         form.reset();
     }
+
 });
 
 
-/* PROJECT FILTER */
+/* =====================
+   PROJECT FILTER
+===================== */
 
-const buttons = document.querySelectorAll(".filter-buttons button");
+const filterBtns = document.querySelectorAll(".filter-buttons button");
 const projects = document.querySelectorAll(".projects-grid article");
 
-buttons.forEach(btn => {
+filterBtns.forEach(btn => {
 
     btn.addEventListener("click", () => {
 
-        const type = btn.dataset.filter;
+        const type = btn.getAttribute("data-filter");
 
         projects.forEach(project => {
 
@@ -77,25 +87,13 @@ buttons.forEach(btn => {
 });
 
 
-/* BACKGROUND PARTICLES */
+/* =====================
+   SCROLL POP-UP ANIMATION
+===================== */
 
-const bg = document.querySelector(".bg-animation");
+const sections = document.querySelectorAll("section");
 
-for (let i = 0; i < 40; i++) {
-
-    const dot = document.createElement("span");
-
-    dot.style.left = Math.random() * 100 + "%";
-    dot.style.animationDelay = Math.random() * 20 + "s";
-    dot.style.animationDuration = 15 + Math.random() * 20 + "s";
-
-    bg.appendChild(dot);
-}
-/* SCROLL ANIMATION */
-
-const allSections = document.querySelectorAll("section");
-
-const revealSection = new IntersectionObserver(
+const observer = new IntersectionObserver(
     function (entries, observer) {
 
         entries.forEach(entry => {
@@ -111,11 +109,30 @@ const revealSection = new IntersectionObserver(
 
     },
     {
-        threshold: 0.15
+        threshold: 0.2
     }
 );
 
-allSections.forEach(section => {
-    revealSection.observe(section);
+sections.forEach(section => {
+
+    observer.observe(section);
+
 });
 
+
+/* =====================
+   BACKGROUND PARTICLES
+===================== */
+
+const bg = document.querySelector(".bg-animation");
+
+for (let i = 0; i < 40; i++) {
+
+    const dot = document.createElement("span");
+
+    dot.style.left = Math.random() * 100 + "%";
+    dot.style.animationDelay = Math.random() * 20 + "s";
+    dot.style.animationDuration = 15 + Math.random() * 20 + "s";
+
+    bg.appendChild(dot);
+}
