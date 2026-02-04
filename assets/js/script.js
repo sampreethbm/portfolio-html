@@ -15,15 +15,11 @@ toggleBtn.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
 
     if (body.classList.contains("dark-mode")) {
-
         toggleBtn.textContent = "☀️ Light Mode";
         localStorage.setItem("theme", "dark");
-
     } else {
-
         toggleBtn.textContent = "🌙 Dark Mode";
         localStorage.setItem("theme", "light");
-
     }
 
 });
@@ -55,34 +51,7 @@ form.addEventListener("submit", function (e) {
         msg.style.color = "green";
 
         form.reset();
-
     }
-
-});
-
-
-/* =====================
-   SCROLL ANIMATION
-===================== */
-
-const sections = document.querySelectorAll("section");
-
-const observer = new IntersectionObserver(entries => {
-
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
-
-    });
-
-});
-
-sections.forEach(section => {
-
-    section.classList.add("hidden");
-    observer.observe(section);
 
 });
 
@@ -103,13 +72,9 @@ filterBtns.forEach(btn => {
         projects.forEach(project => {
 
             if (type === "all" || project.dataset.type === type) {
-
                 project.style.display = "block";
-
             } else {
-
                 project.style.display = "none";
-
             }
 
         });
