@@ -1,4 +1,5 @@
 /* DARK MODE */
+console.log("JS Loaded");
 
 const toggle = document.getElementById("themeToggle");
 const body = document.body;
