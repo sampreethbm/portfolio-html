@@ -7,6 +7,16 @@
 }
 
 :root {
+    /* DARK MODE CLASS */
+
+.dark-mode {
+    --bg: #020617;
+    --card: #0f172a;
+    --text: #f8fafc;
+    --primary: #38bdf8;
+    --gray: #94a3b8;
+}
+
     --primary: #2563eb;
     --secondary: #0ea5e9;
     --dark: #020617;
@@ -238,4 +248,24 @@ footer {
         padding: 1.8rem;
     }
 
+}
+/* THEME BUTTON */
+
+.theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
 }
